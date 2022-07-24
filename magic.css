@@ -34,14 +34,38 @@ body {
 #your-final-card {
     margin-top: 80px;
     animation: fadeIn 8s;
+    display: inline-block;
 }
 
 #your-final-card img {
+    margin: 30px;
     width: 300px;
     animation: fadeIn 10s;
+}
+
+
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(205, 205, 205, 0.5);
+    color: rgb(37, 37, 37, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 .card img {
     width: 60px;
 }
+
+.about-me-icons a {
+    font-size: 22px;
+    margin-left: 30px;
+    text-decoration: none;
+    color: rgb(37, 37, 37, 0.8);
+  }

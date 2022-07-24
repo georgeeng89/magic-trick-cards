@@ -72,11 +72,6 @@ function startGame() {
         magicRow1.push(newDeck[i + 2])
     }
 
-    // console.log('MAGIC ROW 1 --->', magicRow1)
-    // console.log('MAGIC ROW 2 --->', magicRow2)
-    // console.log('MAGIC ROW 3 --->', magicRow3)
-
-
 
     for (let i = 0; i < magicRow3.length; i++) {
         let cardImg = document.createElement("img");
@@ -110,7 +105,6 @@ function startGame() {
 function cardChosen() {
 
     if (counter === 3) {
-
 
         let cardRow1 = document.getElementById("your-cards1")
         let cardRow2 = document.getElementById("your-cards2")
@@ -151,6 +145,8 @@ function cardChosen() {
         let card = newDeck[13]
         cardImg.src = "./cards/" + card + ".png";
         cardImg2.src = "./cards/magic.gif";
+
+
         document.getElementById("your-final-card").append(cardImg)
         document.getElementById("your-final-card").append(cardImg2)
         document.getElementById("your-final-card").append(newText)
@@ -226,13 +222,9 @@ function cardChosen() {
 
 function row1() {
 
-    console.log("CHOSE ROW 1")
-    console.log('OLD DECK --->', newDeck)
-
 
     newDeck = [...magicRow2, ...magicRow1, ...magicRow3]
 
-    console.log('NEW DECK AFTER ROW 1--->', newDeck)
 
 
     magicRow1 = []
