@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+.row-1 {
+    display: flex;
+    justify-content: center;
+}
+
+.row-2 {
+    display: flex;
+    justify-content: center;
+}
+
+.row-3 {
+    display: flex;
+    justify-content: center;
+}
+
+#your-cards1 {
+    animation: fadeIn 2s;
+}
+
+#your-cards2 {
+    animation: fadeIn 2s;
+}
+
+#your-cards3 {
+    animation: fadeIn 2s;
+}
+
+#your-final-card {
+    margin-top: 80px;
+    animation: fadeIn 8s;
+}
+
+#your-final-card img {
+    width: 300px;
+    animation: fadeIn 10s;
+}
+
+
+.card img {
+    width: 60px;
+}
