@@ -101,6 +101,10 @@ function startGame() {
 }
 
 
+function refreshPage(){
+    window.location.reload();
+}
+
 
 function cardChosen() {
 
@@ -136,6 +140,11 @@ function cardChosen() {
         newText.innerHTML = 'Your Card'
 
 
+
+        let button = document.createElement("button")
+        button.innerHTML = "Play Again"
+        button.addEventListener("click", refreshPage);
+
         let ele1 = document.getElementsByClassName("row-1")[0]
         ele1.appendChild(newRow1)
 
@@ -150,6 +159,7 @@ function cardChosen() {
         document.getElementById("your-final-card").append(cardImg)
         document.getElementById("your-final-card").append(cardImg2)
         document.getElementById("your-final-card").append(newText)
+        document.getElementById("your-final-card").append(button)
 
 
         return 'done'
