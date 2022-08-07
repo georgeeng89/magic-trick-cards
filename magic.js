@@ -15,7 +15,6 @@ let magicRow3 = []
 let counter = 0;
 let started = false;
 
-console.log('COUNTER ====>', counter)
 
 
 window.onload = function () {
@@ -39,7 +38,6 @@ function buildDeck() {
             deck.push(values[j] + "-" + types[i]); //A-C -> K-C, A-D -> K-D
         }
     }
-    // console.log('DECK =====>', deck);
 }
 
 function shuffleDeck() {
@@ -60,11 +58,11 @@ function startGame() {
     deckRow2 = deck.slice(9, 18)
     deckRow1 = deck.slice(0, 9)
 
-    console.log('DECKROW3', deckRow3)
+    // console.log('DECKROW3 ===>', deckRow3)
 
     newDeck = [...deckRow3, ...deckRow2, ...deckRow1]
 
-    console.log('NEW ASS DECK =====>', newDeck)
+    // console.log('VERY NEW DECK =====>', newDeck)
 
     for (let i = 0; i < newDeck.length; i += 3) {
         magicRow3.push(newDeck[i])
@@ -256,11 +254,11 @@ function row1() {
 
 function row2() {
 
-    console.log('row 2 old deck--->', newDeck)
+    // console.log('row 2 old deck--->', newDeck)
 
     newDeck = [...magicRow3, ...magicRow2, ...magicRow1]
 
-    console.log('row 2 new deck after--->', newDeck)
+    // console.log('row 2 new deck after--->', newDeck)
 
     magicRow1 = []
     magicRow2 = []
@@ -273,9 +271,9 @@ function row2() {
         magicRow1.push(newDeck[i + 2])
     }
 
-    console.log('new rows 1', magicRow1)
-    console.log('new rows 2', magicRow2)
-    console.log('new rows 3', magicRow3)
+    // console.log('new rows 1', magicRow1)
+    // console.log('new rows 2', magicRow2)
+    // console.log('new rows 3', magicRow3)
 
     counter++;
 
